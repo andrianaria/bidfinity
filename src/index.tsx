@@ -1,19 +1,41 @@
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n/i18n';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import LoginForm from './pages/Login/LoginForm';
+import SignupForm from './pages/Signup/SignupForm';
+import Home from './pages/Home/Home';
+import ItemForm from './pages/Item/ItemForm';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import DepositForm from './pages/Deposit/DepositForm';
+import { UserProvider } from './contexts/UserContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import BidHistoryList from './pages/History/BidHistoryList';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
+function App() {
+  return (
+    <BrowserRouter>
+      <I18nextProvider i18n={i18n}>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/item/new" element={<ItemForm />} />
+          <Route path="/deposit/new" element={<DepositForm />} />
+          <Route path="/bid-history" element={<BidHistoryList />} />
+        </Routes>
+        <ToastContainer />
+      </I18nextProvider>
+    </BrowserRouter>
+  );
+}
+
+ReactDOM.render(
+  <UserProvider>
     <App />
-  </React.StrictMode>
+  </UserProvider>,
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

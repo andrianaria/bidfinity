@@ -1,0 +1,121 @@
+{
+  "title": "Bidfinity",
+  "login": {
+    "title": "Sign in to your account",
+    "username": "Email",
+    "password": "Password",
+    "submit": "Log in",
+    "noAccount": "No account yet?",
+    "signup": "Sign up here"
+  },
+  "signup": {
+    "title": "Sign up for new account",
+    "name": "Name",
+    "nameDescription": "What should we call you?",
+    "email": "Email",
+    "emailDescription": "Enter your email",
+    "password": "Password",
+    "passwordDescription": "Enter your password",
+    "reenterPassword": "Re-enter password",
+    "reenterPasswordDescription": "Re-enter your password",
+    "submit": "Sign up",
+    "error": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "passwordRequired": "Password is required",
+      "confirmPasswordRequired": "Password confirmation is required",
+      "invalidEmail": "Please input the correct email format",
+      "invalidPassword": "Password must be combination of alphabet, number and minimum 8 characters",
+      "passwordsNotMatch": "Password need to be matched"
+    },
+    "message": {
+      "success": "User is registered successfully. Please proceed to login page.",
+      "error": "Something wrong when creating user: {{error}}"
+    },
+    "haveAccount": "Already have an account?",
+    "login": "Log in here"
+  },
+  "home": {
+    "welcome": "Bidding made easy!",
+    "balance": "Balance: {{balance}}",
+    "header": {
+      "welcome": "Welcome {{name}}",
+      "createItem": "Create new item",
+      "deposit": "Deposit",
+      "logout": "Logout"
+    },
+    "tabs": {
+      "draft": "Draft",
+      "ongoing": "Ongoing",
+      "completed": "Completed"
+    },
+    "table": {
+      "name": "Name",
+      "currentPrice": "Current price",
+      "duration": "Duration",
+      "bid": "Bid",
+      "publish": "Publish",
+      "completed": "Completed"
+    },
+    "message": {
+      "publishSuccess": "Item is published successfully and ready for bidding.",
+      "publishError": "Something wrong when publishing item"
+    }
+  },
+  "createNewItem": {
+    "title": "Create New Item",
+    "itemNameLabel": "Item Name",
+    "itemNamePlaceholder": "Enter item name",
+    "startPriceLabel": "Start Price",
+    "startPricePlaceholder": "Enter start price",
+    "timeWindowLabel": "Time Window",
+    "timeWindowHoursPlaceholder": "HH",
+    "timeWindowMinutesPlaceholder": "MM",
+    "timeWindowSecondsPlaceholder": "SS",
+    "message": {
+      "createSuccess": "Item {{name}} created successfully",
+      "createError": "Something wrong when creating item"
+    }
+  },
+  "deposit": {
+    "title": "Deposit",
+    "amountLabel": "Amount",
+    "amountPlaceholder": "Enter the amount to deposit",
+    "message": {
+      "success": "The deposit of {{amount}} to your balance has been completed successfully.",
+      "error": "Failed creating deposit"
+    }
+  },
+  "bid": {
+    "bidForItem": "Bid for item {{item}}",
+    "bidAmountMustBeGreater": "Amount to bid must be greater than {{lastBid}}",
+    "enterBidAmount": "Enter bid amount",
+    "message": {
+      "success": "Bid for {{amount}} is made successfully for item {{item}}",
+      "error": "Something wrong when bidding for this item : {{error}}",
+      "mustBeGreaterThan": "Bidding amount must be greater than the current price: {{lastBid}}"
+    },
+    "confirmationMessage": "Are you sure to bid for {{amount}}?"
+  },
+  "bidHistoryPage": {
+    "title": "Bid History",
+    "itemName": "Item: {{item}}",
+    "lastPrice": "Last price: {{price}}",
+    "user": "User",
+    "bidAmount": "Bid Amount",
+    "date": "Date",
+    "winner": "Winner:",
+    "winningBid": "{{winner}} won with a bid of {{amount}}",
+    "status": {
+      "ongoing": "Ongoing",
+      "completed": "Completed"
+    }
+  },
+  "common": {
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "bidButton": "Bid",
+    "yesButton": "Yes",
+    "noButton": "No"
+  }
+}
