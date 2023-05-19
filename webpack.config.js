@@ -14,13 +14,15 @@ const config = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js', // Specify the output bundle filename
+    clean: true,
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: 'index.html',
-    // }),
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+    }),
 
-    // new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin(),
     new Dotenv(),
   ],
   module: {

@@ -25,7 +25,8 @@ const DepositForm = () => {
     setAmount(event.target.value);
   };
 
-  const handleSave = async () => {
+  const handleSave = async (event: React.FormEvent) => {
+    event.preventDefault();
     try {
       // Create user object
       const deposit = {

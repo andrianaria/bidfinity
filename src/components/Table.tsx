@@ -1,7 +1,12 @@
 import React from 'react';
-import { useTable } from 'react-table';
+import { Column, useTable } from 'react-table';
 
-function Table({ columns, data }) {
+interface TableProps {
+  columns: any[];
+  data: any[]; // Replace 'any' with the appropriate type for your data
+}
+
+function Table({ columns, data }: TableProps) {
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({ columns, data });
 
