@@ -1,23 +1,35 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bidfinity - Bidding made easy
 
-## Available Scripts
+# Project Description
 
-In the project directory, you can run:
+This project is a frontend application built with React and Tailwind CSS. It provides a frontend UI for the bidfinity features from User registration to simple bidding system, communicating to backend through RESTful API.
+
+# Prerequisites
+
+1. Node.js and npm installed on your machine
+
+# Installation
+
+1. Clone the repository:
+   `git clone [repository-url]`
+2. Install dependencies:
+   `cd [project-directory]`
+   `npm install`
+
+# Configuration
+
+1. Rename the .env.example file to .env.
+2. Open the .env file and provide the necessary configuration values for your backend API URL.
+
+# Usage
+
+To start the server, run the following command:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The server will start running on http://localhost:3000 or any port you configure, i.e PORT=4000 npm start.
 
 ### `npm run build`
 
@@ -39,8 +51,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Online Demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can try the online demo for this app on : http://54.167.173.13
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open a GitHub issue or submit a pull request.
+
+# Contact
+
+http://riaandriana.com

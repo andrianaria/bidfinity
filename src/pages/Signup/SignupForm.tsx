@@ -35,7 +35,6 @@ const SignupForm = () => {
         password: password,
       };
       const newUser = await createUser(user);
-      console.dir(newUser);
       toast.success(`${t('signup.message.success')}`, {
         position: toast.POSITION.TOP_RIGHT,
       });

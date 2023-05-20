@@ -22,7 +22,6 @@ export const UserProvider = ({ children }: UserProviderProps) => {
   });
 
   const updateUser = (updatedUser: any) => {
-    console.dir(updatedUser);
     setUser(updatedUser);
   };
 

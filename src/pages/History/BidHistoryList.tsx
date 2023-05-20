@@ -23,7 +23,6 @@ const BidHistoryList = () => {
     if (itemId) {
       const data = await getItemHistory(itemId);
       const { item, bidHistory } = data;
-      console.dir(bidHistory);
       setBidItem(item);
       setBidHistoryItems(bidHistory);
     }
@@ -62,7 +61,10 @@ const BidHistoryList = () => {
                 </div>
                 <div className="font-bold text-gray-600 mb-2">
                   {t('bidHistoryPage.lastPrice', {
-                    price: formatCurrency(bidItem.last_bid, 'USD'),
+                    price: formatCurrency(
+                      Math.max(bidItem.last_bid, bidItem.start_price),
+                      'USD',
+                    ),
                   })}
                 </div>
                 {getStatus() === 'completed' && bidHistoryItems.length > 0 && (

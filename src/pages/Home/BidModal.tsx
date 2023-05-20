@@ -37,7 +37,6 @@ export default function BidModal({
 
   const handleBid = async (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(bidAmount);
     if (!parseFloat(bidAmount) || parseFloat(bidAmount) <= lastBid) {
       toast.error(
         `${t('bid.message.mustBeGreaterThan', {
