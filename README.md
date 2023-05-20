@@ -6,6 +6,8 @@ Bidfinity - Bidding made easy
 
 This project is a frontend application built with React and Tailwind CSS. It provides a frontend UI for the bidfinity features from User registration to simple bidding system, communicating to backend through RESTful API.
 
+Find the complete documentation here: https://coral-radio-b35.notion.site/Bidfinity-App-3bef0526fcae48e5875a9c1bc4c87bdc
+
 # Prerequisites
 
 1. Node.js and npm installed on your machine
